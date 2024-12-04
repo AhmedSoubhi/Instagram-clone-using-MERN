@@ -1,0 +1,195 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 10px; /* Added padding for smaller screens */
+}
+
+/* Container styling */
+form {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+/* Input fields styling */
+input {
+    display: block;
+    width: 90%; /* Set to full width */
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Button styling */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Set to full width */
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Anchor link styling */
+a {
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9rem; /* Adjust font size for better readability */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Heading styling */
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Error message styling */
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Link button styling */
+.link-button {
+    display: block;
+    text-align: center;
+    color: #007bff;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.link-button:hover {
+    text-decoration: underline;
+}
+
+/* Logout button styling */
+.logout-button {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1rem;
+    width: 100%; /* Full width for better touch interaction */
+}
+
+.logout-button:hover {
+    background-color: #c9302c;
+}
+
+/* Container for the home page */
+
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    form {
+        padding: 15px; /* Adjust padding */
+        max-width: 100%; /* Remove max-width for smaller screens */
+    }
+
+    input, button, .logout-button {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Smaller font size for headings */
+    }
+
+    a {
+        font-size: 0.85rem; /* Smaller font size for links */
+    }
+}
+
+.home-container {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f0f2f5;
+}
+
+/* Sidebar container */
+.sidebar {
+    position: fixed;          /* Fixes the sidebar in place */
+    top: 0;
+    right: 0;
+    width: 25%;               /* Sidebar takes up a quarter of the page width */
+    height: 100%;             /* Full height */
+    background-color: white;  /* White background */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    display: flex;
+    flex-direction: column;   /* Stack buttons vertically */
+    align-items: center;      /* Center buttons horizontally */
+    padding-top: 20px;        /* Add some padding at the top */
+    z-index: 1000;            /* Ensures the sidebar is on top */
+  }
+  
+  /* Styling for sidebar buttons */
+.sidebar-button {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center; /* Center the text and image vertically */
+    justify-content: flex-start; /* Align items to the start */
+    margin: -50px 0;
+    margin-top:20%
+}
+
+/* Styling for button content */
+.button-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+/* Styling for button text */
+.button-text {
+    margin-right: 10px; /* Space between text and image */
+    font-size: 1rem; /* Adjust as needed */
+    color: #333; /* Text color */
+    flex: 1; /* Make text take up available space */
+}
+
+/* Image styling inside buttons */
+.sidebar img {
+    width: 15%; /* Adjust the size of the image */
+    height: auto;
+    border-radius: 4px; /* Optional rounded corners */
+    transition: transform 0.2s;
+}
+
+/* Image hover effect */
+.sidebar img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}

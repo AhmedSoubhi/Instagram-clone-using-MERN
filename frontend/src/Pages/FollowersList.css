@@ -1,0 +1,40 @@
+/* src/Pages/FollowersList.css */
+
+.followers-list-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: 'Arial, sans-serif';
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+.followers-list {
+    list-style: none;
+    padding: 0;
+}
+
+.followers-list li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.followers-list li:hover {
+    background-color: #e6f2ff;
+}
+
+.followers-list li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.followers-list li a:hover {
+    color: #3897f0;
+}

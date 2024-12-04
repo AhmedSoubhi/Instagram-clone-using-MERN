@@ -1,0 +1,144 @@
+
+.home-container  {
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home-container .sidebar-button:hover {
+    background-color: #e0e0e0; /* Override hover style */
+    color: inherit; /* Remove any inherited color */
+    font-size: inherit; /* Remove any inherited font size change */
+    transform: none; /* Prevent any inherited scale or other transformations */
+}
+
+.sidebar {
+    width: 335px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+
+.button-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.button-text {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.home {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Keeps content scrollable */
+    scrollbar-width: none; /* Firefox */
+}
+.home::-webkit-scrollbar {
+    display: none;
+}
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+.feed {
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* Remove space between posts */
+}
+
+.post {
+    border-bottom: 1px solid #ddd; /* Add a thin line as a separator */
+    padding: 15px;
+    background-color: #fff;
+    max-width: 500px;
+    border-radius: 0; /* Remove border radius for a tighter look */
+    border-left: none;
+    border-right: none;
+}
+.post:last-child {
+    border-bottom: none; /* Remove bottom border from the last post */
+}
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.post-profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.post-username {
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+.post-username:hover {
+    text-decoration: underline;
+}
+
+.post-image {
+    width: 100%; /* Ensures the image fits within the post container */
+    max-height: 500px; /* Sets a maximum height to standardize size */
+    object-fit: cover; /* Ensures the image scales without distortion */
+    border-radius: 10px;
+}
+
+.post-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.home-container .like-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 10px; /* Ensure size remains small */
+    transition: transform 0.2s ease;
+}
+
+.home-container .like-button:hover {
+    transform: scale(1.1);
+    color: inherit; /* Ensure it doesn’t pick up any unwanted colors */
+}
+
+
+.post-caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.post-time {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #777;
+}
+/* frontend/src/Home.css */
+

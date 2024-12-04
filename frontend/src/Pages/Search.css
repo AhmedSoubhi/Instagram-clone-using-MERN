@@ -1,0 +1,76 @@
+/* src/Pages/Search.css */
+
+.search-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: 'Arial, sans-serif';
+}
+
+.search-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    width: 300%; /* Ensure it spans the available width */
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000; /* Black text to ensure visibility */
+    background-color: #fff; /* White background */
+    box-sizing: border-box; /* Include padding in width */
+}
+
+.search-button {
+    padding: 1px 8px; /* Smaller padding for a compact size */
+    background-color: #3897f0;
+    color: white;
+    border: none;
+    border-radius: 12px; /* Reduced border radius for a smaller look */
+    cursor: pointer;
+    font-size: 18px; /* Smaller font size for compact text */
+    transition: background-color 0.3s ease;
+    height: 50px; /* Fixed height for consistency */
+    margin-left: 5px; /* Optional: Add some spacing from the input field */
+    margin-top: 9px;
+}
+
+.search-button:hover {
+    background-color: #318ce7;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+.search-results {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.search-results li {
+    list-style: none;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.search-results li:hover {
+    background-color: #e6f2ff;
+}
+
+.search-results li p {
+    margin: 5px 0;
+}
+
+.search-results li a {
+    text-decoration: none;
+    color: inherit;
+}

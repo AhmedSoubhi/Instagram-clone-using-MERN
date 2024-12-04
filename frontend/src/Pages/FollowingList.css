@@ -1,0 +1,40 @@
+/* src/Pages/FollowingList.css */
+
+.following-list-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: 'Arial, sans-serif';
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+.following-list {
+    list-style: none;
+    padding: 0;
+}
+
+.following-list li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+}
+
+.following-list li:hover {
+    background-color: #e6f2ff;
+}
+
+.following-list li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.following-list li a:hover {
+    color: #3897f0;
+}

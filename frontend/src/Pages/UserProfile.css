@@ -1,0 +1,156 @@
+/* src/Pages/UserProfile.css */
+
+.user-profile-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial, sans-serif';
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+}
+
+.user-profile-content {
+    margin-top: 20px;
+}
+
+.user-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.user-image {
+    margin-right: 30px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-info {
+    flex-grow: 1;
+}
+
+.username {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+.user-stats {
+    display: flex;
+    gap: 20px;
+    margin: 10px 0;
+    align-items: center;
+}
+
+.user-stats span {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.user-stats a {
+    color: #3897f0;
+    text-decoration: none;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.user-stats a:hover {
+    text-decoration: underline;
+}
+
+.follow-button,
+.unfollow-button,
+.upload-button {
+    padding: 8px 16px;
+    background-color: #3897f0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.unfollow-button {
+    background-color: #ff4d4d;
+}
+
+.follow-button:hover {
+    background-color: #318ce7;
+}
+
+.unfollow-button:hover {
+    background-color: #e60000;
+}
+
+.upload-button:hover {
+    background-color: #318ce7;
+}
+
+.posts-heading {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+@media (max-width: 1024px) {
+    .posts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .posts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .user-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .user-stats {
+        justify-content: center;
+    }
+
+    .user-info {
+        text-align: center;
+    }
+}
+
+.post-item {
+    position: relative;
+    overflow: hidden;
+    background-color: #f9f9f9;
+    transition: transform 0.2s;
+}
+
+.post-item:hover {
+    transform: scale(1.02);
+}
+
+.post-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}

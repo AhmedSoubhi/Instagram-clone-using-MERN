@@ -1,0 +1,102 @@
+/* frontend/src/components/Settings/Settings.css */
+
+.settings-container {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    background-color: #f9f9f9;
+  }
+  
+  /* Renamed from .sidebar to .settings-dashboard */
+  .settings-dashboard {
+    width: 250px;
+    background-color: #2c3e50;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dashboard-button {
+    background-color: #34495e;
+    color: #ecf0f1;
+    border: none;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dashboard-button:hover {
+    background-color: #3d566e;
+  }
+  
+  .dashboard-button.active {
+    background-color: #1abc9c;
+  }
+  
+  .profile-logout-button {
+    background-color: #e74c3c; /* Red color for logout */
+  }
+  
+  .profile-logout-button:hover {
+    background-color: #c0392b;
+  }
+  
+  .settings-content {
+    flex: 1;
+    padding: 40px;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+  
+  .upload-section {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .settings-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-picture-section {
+    margin-bottom: 20px;
+  }
+  
+  .profile-picture-section label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .profile-picture-section input[type="file"] {
+    padding: 5px;
+  }
+  
+  .update-button {
+    width: 200px;
+    padding: 10px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+  }
+  
+  .update-button:hover {
+    background-color: #16a085;
+  }
+  
+  .error-message {
+    color: red;
+    margin-bottom: 15px;
+  }
+  

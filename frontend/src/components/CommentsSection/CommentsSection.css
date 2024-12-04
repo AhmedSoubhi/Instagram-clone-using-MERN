@@ -1,0 +1,113 @@
+/* frontend/src/components/CommentsSection/CommentsSection.css */
+
+.comments-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 15px; /* Extra padding to avoid bottom edge */
+}
+
+.comments-container h4 {
+    margin-bottom: 10px;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.comments-list {
+    flex: 1;
+    overflow-y: auto; /* Enables scrolling when content overflows */
+    margin-bottom: 10px;
+}
+
+.comments-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.comment-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.comment-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover; /* Ensures image covers container */
+    flex-shrink: 0;
+}
+
+.comment-content {
+    background-color: #f0f0f0;
+    padding: 8px 10px;
+    border-radius: 5px;
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.comment-content strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.95em;
+}
+
+.comment-content p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #333;
+}
+
+.comment-time {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.75em;
+    color: #999;
+}
+
+.add-comment-form {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    padding: px 0;
+    margin-top: 10px; /* Space above the form */
+    margin-bottom: 20px; /* Add space below the form */
+    border-top: 1px solid #ddd;
+}
+
+
+.comment-input {
+    flex: 3; /* Take up more space */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    height: 50px; /* Fixed height */
+    font-size: 16px;
+    box-sizing: border-box;
+    resize: none; /* Disable manual resizing */
+    background-color: #fff;
+    color: #000;
+    margin-right: 8px; /* Add spacing between input and button */
+}
+
+.comment-input:focus {
+    border-color: #007bff;
+}
+
+.submit-comment-button {
+    flex: 0; /* Take up less space */
+    padding: 16px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-comment-button:hover {
+    background-color: #0056b3;
+}
+
+

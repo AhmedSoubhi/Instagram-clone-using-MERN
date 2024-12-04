@@ -1,0 +1,58 @@
+/* frontend/src/pages/Chat.css */
+
+.chat-page {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    width: 100vw;
+    font-family: 'Arial, sans-serif';
+    align-items: stretch; /* Children stretch to full height */
+    overflow: hidden; /* Prevent overflow on mobile */
+}
+
+/* Add padding-bottom when Sidebar is visible on mobile */
+.chat-page.with-sidebar {
+    padding-bottom: 80px; /* Height of the Sidebar on mobile */
+}
+
+/* Users Sidebar Styles */
+.users-sidebar {
+    width: 250px; /* Fixed width for sidebar */
+    background-color: #f9f9f9;
+    height: 100%; /* Match the height of chat window */
+    display: flex;
+    flex-direction: column;
+    /* Remove padding and border-right */
+    padding: 0;
+    border-right: none;
+}
+
+/* Chat Window Styles */
+.chat-window {
+    flex: 1; /* Take remaining space */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Prevent overflow */
+    /* Keep border-left as a divider */
+    border-left: 1px solid #ddd;
+    /* Remove margin and padding */
+    margin: 0;
+    padding: 0;
+    max-width: 550px; /* Sets a narrower max width for the chat window */
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .chat-page {
+        flex-direction: column;
+    }
+
+    .users-sidebar,
+    .chat-window {
+        width: 100%;
+        height: auto;
+        border-left: none;
+        border-bottom: 1px solid #ddd;
+    }
+
+    /* Adjust for padding-bottom handled via .with-sidebar */
+}
